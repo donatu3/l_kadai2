@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja" dir="ltr">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<title>正規表現 | PHP Labo</title>
+	<meta name="copyright" content="Copyright (C) 2007-2009 Knight" />
+	<link rel="stylesheet" href="../../css/common.css" type="text/css" media="all" />
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+		<h1><a href="http://www.php-labo.net/" title="PHP Labo">PHP Labo</a></h1>
+		<p>フリーPHPスクリプト配布サイト。</p>
+	</div>
+	<div id="menu">
+		<h2>Menu</h2>
+		<ul>
+			<li><a href="../../">トップページ</a></li>
+			<li><a href="../../info/">サイトについて</a></li>
+			<li><a href="../../download/">ダウンロード</a></li>
+			<li><a href="../../setup/">設置の基本</a></li>
+			<li><a href="../../customize/">カスタマイズ</a></li>
+			<li><a href="../../tutorial/">PHP入門</a></li>
+			<li><a href="../../info/recommend.html">おすすめ書籍</a></li>
+		</ul>
+		<h2>Contact</h2>
+		<ul>
+			<li><a href="../../info/support/">設置サポート</a></li>
+			<li><a href="../../info/message/">ご意見箱</a></li>
+			<li><a href="../../info/service/">有償制作</a></li>
+			<li><a href="../../info/contact/">フォームメール</a></li>
+		</ul>
+	</div>
+	<div id="contents">
+		<h2>正規表現</h2>
+			<p class="path"><a href="../../">トップ</a> &gt; <a href="../">PHP入門</a> &gt; 正規表現</p>
+			<h3>目次</h3>
+				<ul>
+					<li><a href="#match">正規表現について</a></li>
+					<li><a href="#mark">特殊記号について</a></li>
+					<li><a href="#series">一連の文字列との比較</a></li>
+				</ul>
+				<h4>広告</h4>
+				<dl>
+					<dt><a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2613656&amp;pid=878714883"><img src="http://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=2613656&amp;pid=878714883" height="1" width="1" class="counter" />WADAX</a></dt>
+						<dd>安心の365日電話サポート付きレンタルサーバーです。</dd>
+					<dt><a href="http://ck.jp.ap.valuecommerce.com/servlet/referral?sid=2613656&amp;pid=878719993"><img src="http://ad.jp.ap.valuecommerce.com/servlet/gifbanner?sid=2613656&amp;pid=878719993" height="1" width="1" class="counter" />ロリポップ！</a></dt>
+						<dd>月額263円からのレンタルサーバー。マニュアルも充実しています。</dd>
+				</dl>
+				<p>
+					<script type="text/javascript" src="../../js/google.js"></script>
+					<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+				</p>
+			<h3 id="match">正規表現について</h3>
+				<p>正規表現を使用すると、文字列のパターンによる検索や置換を行えます。前回の条件分岐では「○○と等しければ」や「○○以上なら」という条件しか指定できませんでしたが、正規表現では「○○を含んでいれば」や「○○から始まる文字ならば」というような指定が可能になります。</p>
+				<p>正規表現を利用するには、<code>preg_match</code> 関数を使用します。具体的には、以下のような書式で比較を行います。</p>
+				<pre><code>preg_match("/検索パターンを表す文字列/", 比較文字列)</code></pre>
+				<p>これで「<code>比較文字列</code> に <code>検索パターンを表す文字列</code> が含まれるか？」を調べることができます。</p>
+				<p>以下に、正規表現を使用したプログラムを記載します。</p>
+				<pre><code>&lt;?php
+
+$string = "PHPサンプルプログラム。";
+
+if (preg_match("/PHP/", $string)) {
+  echo "「PHP」が含まれています。";
+} else {
+  echo "「PHP」が含まれていません。";
+}
+
+?&gt;</code></pre>
+				<p>これで「<code>$string</code> に <code>PHP</code> が含まれるか？」という比較になります。今は <code>PHP</code> が含まれているので、画面に <code>「PHP」が含まれています。</code> と表示されます。</p>
+				<p>正規表現は、これだけで本が書けてしまうほど複雑な機能ですが、少し使うだけならそれほど難しくありません。以下でいくつか例を紹介します。</p>
+			<h3 id="mark">特殊記号について</h3>
+				<p><code>preg_match</code> の <code>検索パターンを表す文字列</code> の初めに <code>^</code> を指定すると、「○○で始まる文字ならば」となります。具体的には、以下のようなプログラムになります。</p>
+				<pre><code>&lt;?php
+
+if (preg_match("/^PHP/", $string)) {
+  echo "「PHP」から始まる文字列です。";
+}
+
+?&gt;</code></pre>
+				<p>検索パターンは <code>^PHP</code> となっています。これで「PHPから始まる文字列かどうか？」を調べることができます。</p>
+				<p>また、<code>preg_match</code> の <code>検索パターンを表す文字列</code> の最後に <code>$</code> を指定すると、「○○で終わる文字ならば」となります。具体的には、以下のようなプログラムになります。</p>
+				<pre><code>&lt;?php
+
+if (preg_match("/PHP$/", $string)) {
+  echo "「PHP」で終わる文字列です。";
+}
+
+?&gt;</code></pre>
+				<p>検索パターンは <code>PHP$</code> となっています。これで「PHPで終わる文字列かどうか？」を調べることができます。</p>
+			<h3 id="series">一連の文字列との比較</h3>
+				<p><code>preg_match</code> は個別文字列との比較だけでなく、「0～9の数値が含まれていれば」や「アルファベットが含まれていれば」という比較を行うこともできます。</p>
+				<pre><code>&lt;?php
+
+if (preg_match("/[abc]/", $string)) {
+  echo "aかbかcのいずれかが含まれる文字列です。";
+}
+
+?&gt;</code></pre>
+				<p><code>[</code> と <code>]</code> で囲んで文字を指定すると、その中のいずれかに一致するかどうかを比較することができます。</p>
+				<p>また、文字は <code>-</code> で範囲を表すことができます。つまり</p>
+				<pre><code>&lt;?php
+
+if (preg_match("/[a-z]/", $string)) {
+  echo "a～zのいずれかが含まれる文字列です。";
+}
+if (preg_match("/[0-9]/", $string)) {
+  echo "0～9のいずれかが含まれる文字列です。";
+}
+
+?&gt;</code></pre>
+				<p>このような指定をすることができます。</p>
+				<p>正規表現を利用すれば「郵便番号の書式として正しいか？」や「メールアドレスの書式として正しいか？」といった比較もできるようになります。フォームメールや掲示板を作成したとき、入力内容チェック処理として使用することができます。</p>
+	</div>
+	<div id="footer">
+		<address>Copyright &copy; 2007-2009 Knight, All rights reserved.</address>
+	</div>
+</div>
+<script type="text/javascript" src="/js/analyze.js"></script>
+<noscript>
+<p class="counter"><img src="/info/analyze/analyze.php" alt="Analyze" width="1" height="1" /></p>
+</noscript>
+</body>
+
+</html>

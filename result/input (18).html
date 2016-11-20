@@ -1,0 +1,1029 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="content-language" content="ja" />
+	<meta http-equiv="content-style-type" content="text/css" />
+	<meta name="author" content="ブログを自作する！〜自作ブログについて〜(01) :tomds｜トムディーズ" />
+	<meta name="copyright" content="ブログを自作する！〜自作ブログについて〜(01) :tomds｜トムディーズ" />
+	<meta name="description" content="自作ブログを作る。このサイト tomds.comは、自作されたブログシステムで運営されています。ブログを自作するメリットとデメリットについてちょっと書き連ねてみました。" />
+	<meta name="keyword" content="自作ブログ,PHP,SQLite," />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<base href="http://www.tomds.com/" />
+	<link rel="shortcut icon" href="./favicon.ico">
+	<link rel="stylesheet" href="./_css/base.css" type="text/css" />
+	<link rel="stylesheet" href="./_css/entry.css" type="text/css" />
+	
+	<title>ブログを自作する！〜自作ブログについて〜(01) :tomds｜トムディーズ</title>
+</head>
+
+<body>
+
+<!-- JS -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+<!-- 背景領域:ヘッダー -->
+<div id="CBody_BackgroundBox_P01">
+	
+	<!-- メイングラフィック -->	
+	<div id="BOX_IndexMain"  class="MainBox_ContentsStyle">
+		<div class="GraphicArea">
+			<img class="MainImage" src="./_images/TopGraphic.png" width="1100" height="180" alt="tomds｜トムディーズ" />
+		</div>
+	</div><!-- [/]BOX_IndexMain -->
+	
+	<div id="BOX_MenuList"  class="MainBox_ContentsStyle">
+		<a class="Link_Type_MenuList01 Menu" href="./">トップページ<span class="MenuListLink_Mini">(Home)</span></a>
+		<a class="Link_Type_MenuList01 APP" href="./about/">tomdsについて<span class="MenuListLink_Mini">(About)</span></a>
+		<a class="Link_Type_MenuList01 Contact" href="./gallery/">ギャラリー<span class="MenuListLink_Mini">(Gallery)</span></a>
+		<a class="Link_Type_MenuList01 Contact" href="./contact/">お問い合わせ<span class="MenuListLink_Mini">(Contact)</span></a>
+	</div><!-- [/]BOX_MenuList -->
+	
+	<!-- 現在位置ナビゲーション -->	
+	<div id="BOX_NowPositionNavigation"  class="MainBox_ContentsStyle">
+		<div class="NavigationName">ブログを自作する！〜自作ブログについて〜(01)</div>
+	</div><!-- [/]BOX_IndexMain -->
+	
+	
+	<div id="BOX_EntryAndInformation"  class="MainBox_ContentsStyle">
+	<div id="Area_Entry">
+		<div id="Contents_Entry">
+		
+			<ul>
+			
+				<!-- One Pack -->
+				<li>
+					<div id="EntryOne">
+						<div id="EntryOne_Information">
+							<span class="EntryOne_Information_Date">2007/05/26</span>
+							<a class="Link_Type_Entry" href="./e/62"><span class="EntryOne_Information_EntryNo">No:62</span></a>
+						</div><!-- [/]EntryOne_Information -->
+					
+						<div id="EntryOne_Body">
+							<div id="EntryOne_Title">
+								<div id="Area_TitleText"><h2 class="EntryTitle"><a class="Link_Type_Entry" href="./e/62">ブログを自作する！〜自作ブログについて〜(01)</a></h2></div>
+							</div><!-- [/]EntryOne_Title -->
+							
+							<div id="EntryOne_APIs">
+								<span class="EntryOne_APIs_Twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.tomds.com/e/62/" data-via="tomds.com" data-text="ブログを自作する！〜自作ブログについて〜(01)" data-lang="ja">ツイート</a></span>
+							</div><!-- [/]"EntryOne_APIs -->
+						
+							<div class="MainText">
+								<div class="DivPosition_center"><img class="EntryImage" src="./file/images/workietalkie.gif" width="400" height="402" alt="ブログを自作する！〜自作ブログについて〜(01)"></div><!-- [/]DivPosition_center -->このサイト、tomds.comは<strong class=\"normal\">自作</strong>した<strong class=\"normal\">ブログ</strong>システムで稼動しています。（<strong class="strong02">PHP</strong>と<strong class="strong03">SQLite</strong>を使用）<br />
+ちまちまと改良したり機能を追加したりしています。<br />
+<br />
+アクセスログを見てみると、このサイトに検索エンジンから来られる方の割合で、もっとも多いのがイラストや漫画目的の方なのですが、次に多いのが<strong class="strong01">自作ブログ</strong>について検索して来られる方です。（さらに次は<strong class="strong02">PHP</strong>関連など）<br />
+<br />
+そんなこんなの中、<strong class=\"normal\">ブログ</strong>を<strong class=\"normal\">自作</strong>するメリットとデメリットについてちょっと書き連ねてみました。<br />
+（ちなみに、ここでいう<strong class=\"normal\">自作</strong>とは、Movabletypeなどの規定のシステムを使用せずに自分で作ったシステムで<strong class=\"normal\">ブログ</strong>を動かす事です。）<br />
+私も<strong class=\"normal\">ブログ</strong>を<strong class=\"normal\">自作</strong>しちゃうぜ！なんて考えている方の何かの参考になれば幸いです。<br />
+<br />
+<br />
+<span class=\"bold\">［ブログを自作するメリット］</span><br />
+<br />
+・完全自由。規定とかにしばられない。好き勝手に機能を付けられる<br />
+・スパム対策にかなり力を入れられる<br />
+・お勉強になる<br />
+・<strong class=\"normal\">ブログ</strong>のサービス元のトラブルにひっぱられない<br />
+<br />
+まず基本的に完全自由な事があげられます。無料サーバーでないかぎり、余計な広告なども入らないでしょう。<br />
+たとえばこのサイトで言えば、イラストや漫画などの作品を投稿すると、自動的にギャラリーに作品を追加するように作成してあります。<br />
+そして、かならず襲い掛かってくるスパムに対しても、自分で対策を練る事ができます。<br />
+また、プログラムの実践勉強になるので、自然とスキルアップにも繋がると思います。<br />
+一般的な無料<strong class=\"normal\">ブログ</strong>の場合、サービス元のトラブルや運営方針でなんらかしらのダメージを受けることも考えられますが、<strong class=\"normal\">自作</strong><strong class=\"normal\">ブログ</strong>の場合はその心配はありません。<br />
+<br />
+<br />
+そして、もちろんデメリットもあります。<br />
+<br />
+<br />
+<span class=\"bold\">［ブログを自作した場合のデメリット］</span><br />
+<br />
+・お金がかかる（サーバー料金など）<br />
+・自分で作らなければいけない（そりゃそうだ）<br />
+・外部からのクラック攻撃などの対策もしなければならない<br />
+・配布されている<strong class=\"normal\">ブログ</strong>パーツなどが使えなかったり<br />
+・<span class=\"bold\">ポータルからのアクセスが無い</span>（後述しますがこれは痛い。）<br />
+<br />
+はい。デメリットはわかり易いです。<br />
+まずお金がかかる。無料サーバーを使うという手もありますが…。ちなみに私は、さくらインターネットの月５００円のプランを使っています。<br />
+そして、当然の事ながら自分で作らなければならない。もちろんバグも自分で潰さなければなりません。そりゃそうだ。<br />
+セキュリティが甘ければ、自分以外の人に迷惑がかかってしまう可能性もあります。<br />
+<br />
+また、MovableType用の<strong class=\"normal\">ブログ</strong>パーツなどが配布されていますが、それらも基本的にはそのまま使う事はできないと思います。<br />
+（<strong class=\"normal\">ブログ</strong>システムにMT互換機能を持たせれば使えはするかも）<br />
+<br />
+そして、なによりも痛いのが、<span class=\"bold\">ポータルからのアクセスがない</span> ということです。<br />
+たとえば、Livedoor<strong class=\"normal\">ブログ</strong>にしても、FC2<strong class=\"normal\">ブログ</strong>にしても、ポータル…いわゆるサービスのトップページからリンクでお客さんが飛んできます。<br />
+きちんとした形で紹介されれば、アクセスは膨大なものになるでしょう。<br />
+ですが、<strong class=\"normal\">自作</strong>した<strong class=\"normal\">ブログ</strong>の場合、そういう恩恵はうけられません。<br />
+<br />
+<br />
+さて。とりあえず思いついたメリット・デメリットを書き連ねてみました。<br />
+個人的には、メリットで一番大きいのは「勉強になること」だと思います。自分で作成したものですから、他の何かを作成する際に流用する事もできますし。<br />
+そして、デメリットで一番大きいのは、「ポータルからのアクセスが無い」事でしょうか…。これははっきりいって、一般の<strong class=\"normal\">ブログ</strong>サービスがうらやましいです。<br />
+<br />
+さて。<br />
+<br />
+次にこの記事を書くときは、じゃあ実際に作るとなったらどうやって作るか？あたりを書こうかなと思っています。<br />
+<br />
+自作のブログシステムを作りたい！と考えられている方などいらっしゃいましたら、コメントなど頂けるととても嬉しいです。						
+						
+							</div><!-- [/]MainText -->
+							
+							<div id="EntryOne_Adsense">
+								<script type="text/javascript"><!--
+								google_ad_client = "ca-pub-8370472662055496";
+								/* 記事下部バナー */
+								google_ad_slot = "2196134195";
+								google_ad_width = 336;
+								google_ad_height = 280;
+								//-->
+								</script>
+								<script type="text/javascript"
+								src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+								</script>
+							</div><!-- [/]EntryOne_Adsense -->
+						<div id="EntryOne_Comments">
+							<a name="comment"><span class="EntryOne_Comments_Caption">この記事へのコメント:</span></a>
+							<div class="Comments_One  CommentType01">
+								<span class="CommentNo">Comment No.1</span>
+								<span class="CommentDate">2012/05/22</span>
+								<span class="CommentName">K-inukho</span>
+								<span class="CommentBody"></span>
+							</div><!-- [/]Comments_One -->
+							
+							<div class="Comments_One  CommentType02">
+								<span class="CommentNo">Comment No.2</span>
+								<span class="CommentDate">2012/09/08</span>
+								<span class="CommentName"></span>
+								<span class="CommentBody"></span>
+							</div><!-- [/]Comments_One -->
+							
+							<div class="Comments_One  CommentType01">
+								<span class="CommentNo">Comment No.3</span>
+								<span class="CommentDate">2013/08/29</span>
+								<span class="CommentName">ポコ♪</span>
+								<span class="CommentBody">参考になりました！<br /><br />ポコも、自分のブログ作ってみたいな（^-^）v</span>
+							</div><!-- [/]Comments_One -->
+							
+							<div class="Comments_One  CommentType02">
+								<span class="CommentNo">Comment No.4</span>
+								<span class="CommentDate">2013/08/29</span>
+								<span class="CommentName">リリナ</span>
+								<span class="CommentBody">ダサ！<br /><br />今どきブログなんて！<br /><br />ポコ♪頭わるーい!!<br /><br />バッカでー！</span>
+							</div><!-- [/]Comments_One -->
+							
+							<div class="Comments_One  CommentType01">
+								<span class="CommentNo">Comment No.5</span>
+								<span class="CommentDate">2013/08/29</span>
+								<span class="CommentName">管理人MOSSAN（KAW）</span>
+								<span class="CommentBody">ポコ♪ さん リリナ さん<br /><br />こんにちは。管理人MOSSANです。<br />お二人がご兄弟（ご家族？）という前提でご返信致します。<br /><br /><br />最近はTwitterやFacebookが多く使われているので、ブログは確かに古っぽくなってきたかもしれません；<br />とはいえ、SNSはいやがおうにも人と繋がって情報が拡散してしまうため、こういった昔ながらのブログも、ひとりでまったりやっていけるという利点はあるかも？しれません。<br /><br />そのなかでも自作ブログは、やっていて報われるかといったら、うーむ・・・とは思います；<br />とはいえ、あまり人に気にされず、自分で作った情報発信の場でのんびりなにかをやっていくのも、それなりに楽しいです。・・・・たぶん・・・；<br /><br /><br />なんだかうまく言えませんでしたが、SNSもいいけどもスタンドアロンなのもいいところはあるたぶんということで、お伝えさせて頂きました。<br /></span>
+							</div><!-- [/]Comments_One -->
+							
+							<div class="Comments_One  CommentType02">
+								<span class="CommentNo">Comment No.6</span>
+								<span class="CommentDate">2013/11/12</span>
+								<span class="CommentName">やまん</span>
+								<span class="CommentBody">はじめまして！大変参考になりました。<br />自作ブログのメリットはもっと沢山あります。<br />・ＳＥＯ対策（検索エンジン対策化）に有利ですね！<br />・アフィリエイトの自由化<br />・SNSの連携<br />・サイト内でよりインターフェイスの強化につながる。<br />・Googleアナリティクスで分析力をアップ。<br />など。<br />ブログに古いも新しいもありません。FacebookなどのSNS<br />もブログの一種に過ぎません。<br />今の時代はスマホやタブレットでブログを開設したりとブログも進化してます。<br />ブログはいかに内容が良いかで決まります。<br /><br />自作ブログの最大のリスクはPHPにクラックされることです！<br /><br />長い文になりましたが・・・<br /></span>
+							</div><!-- [/]Comments_One -->
+							
+							<div class="Comments_One  CommentType01">
+								<span class="CommentNo">Comment No.7</span>
+								<span class="CommentDate">2013/11/12</span>
+								<span class="CommentName">やまん</span>
+								<span class="CommentBody">はじめまして！大変参考になりました。<br />自作ブログのメリットはもっと沢山あります。<br />・ＳＥＯ対策（検索エンジン対策化）に有利ですね！<br />・アフィリエイトの自由化<br />・SNSの連携<br />・サイト内でよりインターフェイスの強化につながる。<br />・Googleアナリティクスで分析力をアップ。<br />など。<br />ブログに古いも新しいもありません。FacebookなどのSNS<br />もブログの一種に過ぎません。<br />今の時代はスマホやタブレットでブログを開設したりとブログも進化してます。<br />ブログはいかに内容が良いかで決まります。<br /><br />自作ブログの最大のリスクはPHPにクラックされることです！<br /><br />長い文になりましたが・・・<br /></span>
+							</div><!-- [/]Comments_One -->
+							
+							<div class="Comments_One  CommentType02">
+								<span class="CommentNo">Comment No.8</span>
+								<span class="CommentDate">2014/08/08</span>
+								<span class="CommentName">とまて</span>
+								<span class="CommentBody">確かにセキュリティは難しいですね。。。</span>
+							</div><!-- [/]Comments_One -->
+							
+							<div class="Comments_One  CommentType01">
+								<span class="CommentNo">Comment No.9</span>
+								<span class="CommentDate">2014/09/22</span>
+								<span class="CommentName">ayaka</span>
+								<span class="CommentBody">よろしくおねがいしますぅブロつくりてぇ<br /></span>
+							</div><!-- [/]Comments_One -->
+							
+							<div class="Comments_One  CommentType02">
+								<span class="CommentNo">Comment No.10</span>
+								<span class="CommentDate">2015/02/05</span>
+								<span class="CommentName">ぽこぽこ</span>
+								<span class="CommentBody">いつも検索上位にいる知り合いのあほみたいなサイトの秘密がわかりました。<br />外見は普通のページなのですが、WPでこさえて一部のコンテンツをブログとしてランキングなどのあらゆる登録に参加していたのです。<br /><br />私も試しに手打ちでこさえたページをランキング登録したら、蹴られたる強制削除されたり。<br /><br />恥ずかしい。<br /><br />しかたなしにサーバー提供のブログを最低限のブログらしさのみのこしてHPと全く同じ体裁にしてみたら登録はうまくゆくのですが、ドメインがメインのページと同じにできません。<br /><br />カスタマイズできそうなPHPのCMSを探しています。<br /><br />他の書き込み者と親戚ではありません。</span>
+							</div><!-- [/]Comments_One -->
+							
+							<form id="CommentForm" action="./comment_check.php" method="post">
+								<input type="hidden" name="no" value="62">
+								<span class="CommentForm_Caption01">Name:</span><span class="Support_Caption02">お名前</span><br />
+								<input name="user_name" class="CommentForm_Input01" type="text" value=""/><br />
+								<span class="CommentForm_Caption01">HomePageURL:</span><span class="Support_Caption02">ホームページ(あれば)</span><br />
+								http://<input name="user_homepage" class="CommentForm_Input01" type="text" value=""/><br />
+								<span class="CommentForm_Caption01">Comment:</span><span class="Support_Caption02">コメント本文</span><br />
+								<textarea name="user_main" class="CommentForm_TextArea01"></textarea><br />
+								<input class="CommentForm_B_Submit" type="submit"  value="Submit Check (内容確認)" />
+							</div><!-- [/]CommentForm -->
+							
+						</div><!-- [/]EntryOne_Comments -->
+						
+				<div id="EntryOne_TAGs">
+						<span class="TAGHeader">タグ:</span>
+						<a class="Link_Type_Entry TAGs" href="./tag/%E8%87%AA%E4%BD%9C%E3%83%96%E3%83%AD%E3%82%B0">自作ブログ</a>
+						<a class="Link_Type_Entry TAGs" href="./tag/PHP">PHP</a>
+						<a class="Link_Type_Entry TAGs" href="./tag/SQLite">SQLite</a>
+						<a class="Link_Type_Entry TAGs" href="./tag/%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E8%87%AA%E4%BD%9C%E3%81%99%E3%82%8B%EF%BC%81">ブログを自作する！</a>
+					</div><!-- [/]EntryOne_TAGs -->
+						
+				</div><!-- [/]EntryOne -->
+		<li>
+			
+			
+			 
+			</ul>
+		</div><!-- [/]Contents_Entry -->
+		
+	<!-- エントリー移動 -->
+	<div id="MoveEntries">
+		<a class="Link_Type_Entry MoveEntriesOne MoveEntries_New" href="./v/81/"><span class="MoveEntries_Caption">New:</span> 記事No.81 より一覧</a>
+		<a class="Link_Type_Entry MoveEntriesOne MoveEntries_Old" href="./v/61/"><span class="MoveEntries_Caption">Old:</span> 記事No.61 より一覧</a>
+	</div><!-- [/]MoveEntries -->
+	
+	
+	</div><!-- [/]Area_Entry --><div 
+		id="Area_Information">
+		
+		<!-- ここよりインフォーメーション -->
+		
+		<div id="Contents_Information">
+				<div id="Contents_Information_One">
+					<div class="Contents_Information_Title">おすすめなどなど (Amazon)</div>
+					<div class="Contents_Information_OneBOX">
+						<ul>
+
+							<li>
+								<div id="List_One">
+<a href="http://www.amazon.co.jp/gp/product/B00DCMAHQU/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=B00DCMAHQU&linkCode=as2&tag=asprog-22" target="_blank" class="Link_Type_ListBox"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00DCMAHQU&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=asprog-22" ><span  class="AffiliateTitle">APPLE MacBook Air 1.3GHz Dual Core i5/13.3"/4GB/256GB MD761J/A</span></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=asprog-22&l=as2&o=9&a=B00DCMAHQU" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+								</div><!-- [/]List_One -->
+							</li>
+								
+							<li>
+								<div id="List_One">
+<a href="http://www.amazon.co.jp/gp/product/B00EUMXK3S/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=B00EUMXK3S&linkCode=as2&tag=asprog-22" target="_blank" class="Link_Type_ListBox"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00EUMXK3S&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=asprog-22" ><span  class="AffiliateTitle">Parallels Desktop 9 for Mac 初回限定版</span></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=asprog-22&l=as2&o=9&a=B00EUMXK3S" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+								</div><!-- [/]List_One -->
+							</li>
+							
+							<li>
+								<div id="List_One">
+<a href="http://www.amazon.co.jp/gp/product/B009QX78OI/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=B009QX78OI&linkCode=as2&tag=asprog-22" target="_blank" class="Link_Type_ListBox"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B009QX78OI&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=asprog-22" ><span  class="AffiliateTitle">ELSA NVIDIA GTX660チップセット S.A.C 搭載グラフィックカード GD660-2GERX [PCI-Express3.0]</span></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=asprog-22&l=as2&o=9&a=B009QX78OI" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+								</div><!-- [/]List_One -->
+							</li>
+							
+							<li>
+								<div id="List_One">
+<a href="http://www.amazon.co.jp/gp/product/B00CDKQ770/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=B00CDKQ770&linkCode=as2&tag=asprog-22" target="_blank" class="Link_Type_ListBox"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B00CDKQ770&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=asprog-22" ><span  class="AffiliateTitle">LOGICOOL 【FF14正式推奨】 ゲーミングマウス G300r</span></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=asprog-22&l=as2&o=9&a=B00CDKQ770" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+								</div><!-- [/]List_One -->
+							</li>
+
+							<li>
+								<div id="List_One">
+<a href="http://www.amazon.co.jp/gp/product/B006M9U08K/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=B006M9U08K&linkCode=as2&tag=asprog-22" target="_blank" class="Link_Type_ListBox"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B006M9U08K&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=asprog-22" ><span  class="AffiliateTitle">Microsoft Office for Mac Home and Student 2011 ファミリーパック [ダウンロード] (PC3台/1ライセンス)</span></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=asprog-22&l=as2&o=9&a=B006M9U08K" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+								</div><!-- [/]List_One -->
+							</li>
+							
+							<li>
+								<div id="List_One">
+<a href="http://www.amazon.co.jp/gp/product/B008B3AMMO/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=B008B3AMMO&linkCode=as2&tag=asprog-22" target="_blank" class="Link_Type_ListBox"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B008B3AMMO&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=asprog-22" ><span  class="AffiliateTitle">APPLE MacBook Air 1.8GHz Core i5/13.3/4GB/128GB MD231J/A</span></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=asprog-22&l=as2&o=9&a=B008B3AMMO" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+								</div><!-- [/]List_One -->
+							</li>
+								
+							<li>
+								<div id="List_One">
+<a href="http://www.amazon.co.jp/gp/product/B008N6SO6U/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=B008N6SO6U&linkCode=as2&tag=asprog-22" target="_blank" class="Link_Type_ListBox"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B008N6SO6U&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=asprog-22" ><span  class="AffiliateTitle">Microsoft Windows 8 Pro 発売記念優待版 (2013年1月31日まで:型番情報:3UR-00026)</span></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=asprog-22&l=as2&o=9&a=B008N6SO6U" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+								</div><!-- [/]List_One -->
+							</li>
+							
+							<li>
+								<div id="List_One">
+<a href="http://www.amazon.co.jp/gp/product/B009A3M8X0/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=B009A3M8X0&linkCode=as2&tag=asprog-22" target="_blank" class="Link_Type_ListBox"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B009A3M8X0&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=asprog-22" ><span  class="AffiliateTitle">Apple iPod touch 32GB ホワイト&シルバー MD720J/A  <第5世代></span></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=asprog-22&l=as2&o=9&a=B009A3M8X0" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+								</div><!-- [/]List_One -->
+							</li>
+								
+							<li>
+								<div id="List_One">
+<a href="http://www.amazon.co.jp/gp/product/4798030937/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=4798030937&linkCode=as2&tag=asprog-22" target="_blank" class="Link_Type_ListBox"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4798030937&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=asprog-22" ><span  class="AffiliateTitle">PHP逆引き大全 516の極意</span></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=asprog-22&l=as2&o=9&a=4798030937" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+								</div><!-- [/]List_One -->
+							</li>
+								
+							<li>
+								<div id="List_One">
+<a href="http://www.amazon.co.jp/gp/product/4798038245/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=4798038245&linkCode=as2&tag=asprog-22" target="_blank" class="Link_Type_ListBox"><img class="List_OneImage" border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4798038245&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=asprog-22" ><span  class="AffiliateTitle">cocos2d-x開発のレシピ</span></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=asprog-22&l=as2&o=9&a=4798038245" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+<a href="http://www.amazon.co.jp/gp/product/4897979226/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=4897979226&linkCode=as2&tag=asprog-22" target="_blank" class="Link_Type_ListBox"><img class="List_OneImage" border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4897979226&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=asprog-22" ><span  class="AffiliateTitle">cocos2d-x入門</span></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=asprog-22&l=as2&o=9&a=4897979226" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+<a href="http://www.amazon.co.jp/gp/product/477751711X/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=477751711X&linkCode=as2&tag=asprog-22" target="_blank" class="Link_Type_ListBox"><img class="List_OneImage" border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=477751711X&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=asprog-22" ><span  class="AffiliateTitle">cocos2dでつくるiPhoneゲーム</span></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=asprog-22&l=as2&o=9&a=477751711X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+<a href="http://www.amazon.co.jp/gp/product/4899772882/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=4899772882&linkCode=as2&tag=asprog-22" target="_blank" class="Link_Type_ListBox"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4899772882&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=asprog-22" ><span  class="AffiliateTitle">cocos2d for iPhoneレッスンノート</span></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=asprog-22&l=as2&o=9&a=4899772882" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+<a href="http://www.amazon.co.jp/gp/product/4844330411/ref=as_li_ss_il?ie=UTF8&camp=247&creative=7399&creativeASIN=4844330411&linkCode=as2&tag=asprog-22" target="_blank" class="Link_Type_ListBox"><img border="0" src="http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4844330411&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=asprog-22" ><span  class="AffiliateTitle">cocos2dで作る iPhone＆iPadゲームプログラミング</span></a><img src="http://ir-jp.amazon-adsystem.com/e/ir?t=asprog-22&l=as2&o=9&a=4844330411" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+								</div><!-- [/]List_One -->
+							</li>
+
+						</ul>
+					</div><!-- [/]Contents_Information_OneBOX -->
+				</div><!-- [/]Contents_Information_One -->
+								<!-- 最近の記事 -->
+				<div id="Contents_Information_One">
+					<div class="Contents_Information_Title">最近の記事</div>
+					<div class="Contents_Information_OneBOX">
+						<ul>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/126/">
+									<div id="Information_Normal_Text"><span class="EntryDate">2013/09/06</span><span class="Information_Normal_Text">Macbook Air 13インチ (2013 Mid MD761J/A)を買いました。</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/125/">
+									<div id="Information_Normal_Text"><span class="EntryDate">2013/09/01</span><span class="Information_Normal_Text">Nexus7 (初代) リファービッシュ品を買いました</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/124/">
+									<div id="Information_Normal_Text"><span class="EntryDate">2013/08/20</span><span class="Information_Normal_Text">自作ブログシステム更新(10):全般的にリニューアル</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/123/">
+									<div id="Information_Normal_Text"><span class="EntryDate">2011/10/20</span><span class="Information_Normal_Text">iPhone4S 買いました。ところが(ヨドバシ＋モバゲー 問題について)</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/122/">
+									<div id="Information_Normal_Text"><span class="EntryDate">2011/10/02</span><span class="Information_Normal_Text">Core i5 2500K ＋ Z68マザーボードを買いました</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/121/">
+									<div id="Information_Normal_Text"><span class="EntryDate">2011/08/23</span><span class="Information_Normal_Text">自作ブログシステム更新(09)：SQLite2からSQLite3、EUC-JPからUTF-8へ</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/120/">
+									<div id="Information_Normal_Text"><span class="EntryDate">2011/04/01</span><span class="Information_Normal_Text">映画KICK ASS(キック・アス)が素晴らしい！</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/119/">
+									<div id="Information_Normal_Text"><span class="EntryDate">2011/03/31</span><span class="Information_Normal_Text">更新再開</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/118/">
+									<div id="Information_Normal_Text"><span class="EntryDate">2010/05/20</span><span class="Information_Normal_Text">ウイッチたんのイラスト04 (お団子濡れウイッチ。Left 4 Dead Witch)</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/117/">
+									<div id="Information_Normal_Text"><span class="EntryDate">2010/04/14</span><span class="Information_Normal_Text">ウイッチたんのイラスト03 (Left 4 Dead)</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+						</ul>
+					</div><!-- [/]Contents_Information_OneBOX -->
+				</div><!-- [/]Contents_Information_One -->
+				
+				
+				<!-- 最近の画像-->
+				<div id="Contents_Information_One">
+					<div class="Contents_Information_Title">最近のギャラリー画像</div>
+					<div class="Contents_Information_OneBOX">
+						<ul>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/120/">
+									<div id="IN_Entrylist_Image"><img class="APPlist_Image" src="./file/icons/kickass_hitgirl01_i01.jpg" width="80" height="80" alt="映画KICK ASS(キック・アス)が素晴らしい！" /></div>
+									<div id="IN_Entrylist_Text"><span class="EntryDate">2011/04/01</span><span class="Information_Normal_Text">映画KICK ASS(キック・アス)が素晴らしい！</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/118/">
+									<div id="IN_Entrylist_Image"><img class="APPlist_Image" src="./file/icons/witchtan04_i01.jpg" width="80" height="80" alt="ウイッチたんのイラスト04 (お団子濡れウイッチ。Left 4 Dead Witch)" /></div>
+									<div id="IN_Entrylist_Text"><span class="EntryDate">2010/05/20</span><span class="Information_Normal_Text">ウイッチたんのイラスト04 (お団子濡れウイッチ。Left 4 Dead Witch)</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/117/">
+									<div id="IN_Entrylist_Image"><img class="APPlist_Image" src="./file/icons/l4d_witchtan03_i01.gif" width="80" height="80" alt="ウイッチたんのイラスト03 (Left 4 Dead)" /></div>
+									<div id="IN_Entrylist_Text"><span class="EntryDate">2010/04/14</span><span class="Information_Normal_Text">ウイッチたんのイラスト03 (Left 4 Dead)</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/116/">
+									<div id="IN_Entrylist_Image"><img class="APPlist_Image" src="./file/icons/l4d_witchtan02_i01.gif" width="80" height="80" alt="ウイッチたん02 (叫ぶキット持ちウイッチたん)" /></div>
+									<div id="IN_Entrylist_Text"><span class="EntryDate">2010/04/14</span><span class="Information_Normal_Text">ウイッチたん02 (叫ぶキット持ちウイッチたん)</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/115/">
+									<div id="IN_Entrylist_Image"><img class="APPlist_Image" src="./file/icons/l4d_witch_i01.gif" width="80" height="80" alt="ウイッチたん (Left 4 Dead)" /></div>
+									<div id="IN_Entrylist_Text"><span class="EntryDate">2009/10/09</span><span class="Information_Normal_Text">ウイッチたん (Left 4 Dead)</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/108/">
+									<div id="IN_Entrylist_Image"><img class="APPlist_Image" src="./file/icons/blogjisaku02_i01.gif" width="80" height="80" alt="ブログを自作する！〜自作ブログについて〜(02)" /></div>
+									<div id="IN_Entrylist_Text"><span class="EntryDate">2009/06/19</span><span class="Information_Normal_Text">ブログを自作する！〜自作ブログについて〜(02)</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/107/">
+									<div id="IN_Entrylist_Image"><img class="APPlist_Image" src="./file/icons/newsmates02_i01.gif" width="80" height="80" alt="news mates: (ニュースメイツ) Page05〜Page07" /></div>
+									<div id="IN_Entrylist_Text"><span class="EntryDate">2009/06/06</span><span class="Information_Normal_Text">news mates: (ニュースメイツ) Page05〜Page07</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+						</ul>
+					</div><!-- [/]Contents_Information_OneBOX -->
+				</div><!-- [/]Contents_Information_One -->
+				
+				
+				<!-- 数の多いタグ-->
+				<div id="Contents_Information_One">
+					<div class="Contents_Information_Title">数の多いタグ</div>
+					<div class="Contents_Information_OneBOX">
+						<ul>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB/">
+										<span class="Information_Normal_Text">オリジナル (24)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2/">
+										<span class="Information_Normal_Text">ハードウェア (24)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88%28+Illust+%29/">
+										<span class="Information_Normal_Text">イラスト( Illust ) (21)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/%E3%82%B2%E3%83%BC%E3%83%A0/">
+										<span class="Information_Normal_Text">ゲーム (19)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/%E8%87%AA%E4%BD%9C%E3%83%96%E3%83%AD%E3%82%B0/">
+										<span class="Information_Normal_Text">自作ブログ (15)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/PHP/">
+										<span class="Information_Normal_Text">PHP (13)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/SQLite/">
+										<span class="Information_Normal_Text">SQLite (11)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/%E3%82%B5%E3%82%A4%E3%83%88%E6%9B%B4%E6%96%B0/">
+										<span class="Information_Normal_Text">サイト更新 (11)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2/">
+										<span class="Information_Normal_Text">ソフトウェア (9)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/UMPC/">
+										<span class="Information_Normal_Text">UMPC (8)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/%E3%83%9F%E3%83%8B%E3%83%8E%E3%83%BC%E3%83%88/">
+										<span class="Information_Normal_Text">ミニノート (8)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/%E6%BC%AB%E7%94%BB%28+Comics+%29/">
+										<span class="Information_Normal_Text">漫画( Comics ) (8)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/%E7%89%88%E6%A8%A9%E3%82%82%E3%81%AE/">
+										<span class="Information_Normal_Text">版権もの (7)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/HP2133/">
+										<span class="Information_Normal_Text">HP2133 (6)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/Left+4+Dead+/">
+										<span class="Information_Normal_Text">Left 4 Dead  (6)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/Flash/">
+										<span class="Information_Normal_Text">Flash (5)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/TALKIE/">
+										<span class="Information_Normal_Text">TALKIE (5)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/tomds/">
+										<span class="Information_Normal_Text">tomds (5)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/Aspire+One/">
+										<span class="Information_Normal_Text">Aspire One (4)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./tag/CS4/">
+										<span class="Information_Normal_Text">CS4 (4)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+						</ul>
+					</div><!-- [/]Contents_Information_OneBOX -->
+				</div><!-- [/]Contents_Information_One -->
+				
+				
+				<!-- 月別のログ-->
+				<div id="Contents_Information_One">
+					<div class="Contents_Information_Title">月別のログ</div>
+					<div class="Contents_Information_OneBOX">
+						<ul>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/201309/">
+										<span class="Information_Normal_Text">2013/09</a>(2)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/201308/">
+										<span class="Information_Normal_Text">2013/08</a>(1)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/201110/">
+										<span class="Information_Normal_Text">2011/10</a>(2)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/201108/">
+										<span class="Information_Normal_Text">2011/08</a>(1)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/201104/">
+										<span class="Information_Normal_Text">2011/04</a>(1)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/201103/">
+										<span class="Information_Normal_Text">2011/03</a>(1)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/201005/">
+										<span class="Information_Normal_Text">2010/05</a>(1)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/201004/">
+										<span class="Information_Normal_Text">2010/04</a>(2)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200910/">
+										<span class="Information_Normal_Text">2009/10</a>(1)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200909/">
+										<span class="Information_Normal_Text">2009/09</a>(1)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200907/">
+										<span class="Information_Normal_Text">2009/07</a>(3)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200906/">
+										<span class="Information_Normal_Text">2009/06</a>(5)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200905/">
+										<span class="Information_Normal_Text">2009/05</a>(2)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200904/">
+										<span class="Information_Normal_Text">2009/04</a>(1)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200903/">
+										<span class="Information_Normal_Text">2009/03</a>(4)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200902/">
+										<span class="Information_Normal_Text">2009/02</a>(5)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200901/">
+										<span class="Information_Normal_Text">2009/01</a>(1)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200812/">
+										<span class="Information_Normal_Text">2008/12</a>(9)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200810/">
+										<span class="Information_Normal_Text">2008/10</a>(1)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200809/">
+										<span class="Information_Normal_Text">2008/09</a>(2)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200808/">
+										<span class="Information_Normal_Text">2008/08</a>(4)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200807/">
+										<span class="Information_Normal_Text">2008/07</a>(1)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200806/">
+										<span class="Information_Normal_Text">2008/06</a>(1)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200805/">
+										<span class="Information_Normal_Text">2008/05</a>(2)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200804/">
+										<span class="Information_Normal_Text">2008/04</a>(1)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200801/">
+										<span class="Information_Normal_Text">2008/01</a>(1)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200712/">
+										<span class="Information_Normal_Text">2007/12</a>(1)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200711/">
+										<span class="Information_Normal_Text">2007/11</a>(1)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200709/">
+										<span class="Information_Normal_Text">2007/09</a>(2)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200708/">
+										<span class="Information_Normal_Text">2007/08</a>(1)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200707/">
+										<span class="Information_Normal_Text">2007/07</a>(2)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200705/">
+										<span class="Information_Normal_Text">2007/05</a>(4)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200704/">
+										<span class="Information_Normal_Text">2007/04</a>(8)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200703/">
+										<span class="Information_Normal_Text">2007/03</a>(7)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200702/">
+										<span class="Information_Normal_Text">2007/02</a>(6)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200701/">
+										<span class="Information_Normal_Text">2007/01</a>(5)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200612/">
+										<span class="Information_Normal_Text">2006/12</a>(8)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200611/">
+										<span class="Information_Normal_Text">2006/11</a>(5)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200610/">
+										<span class="Information_Normal_Text">2006/10</a>(9)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200609/">
+										<span class="Information_Normal_Text">2006/09</a>(5)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./log/200608/">
+										<span class="Information_Normal_Text">2006/08</a>(6)</span>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+						</ul>
+					</div><!-- [/]Contents_Information_OneBOX -->
+				</div><!-- [/]Contents_Information_One -->
+				
+				
+				<!-- 最近のコメント -->
+				<div id="Contents_Information_One">
+					<div class="Contents_Information_Title">最近のコメント</div>
+					<div class="Contents_Information_OneBOX">
+						<ul>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/105/#comment">
+									<div id="Information_Normal_Text"><span class="EntryDate">2016/11/11</span><span class="Information_Normal_Text"> 実四季理桜 様
+
+管理人MOSSANです。
+お疲れ様でした。明日も、楽しく演劇ができると良い</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/105/#comment">
+									<div id="Information_Normal_Text"><span class="EntryDate">2016/11/11</span><span class="Information_Normal_Text">今日、本番でした！
+今日は児童観覧日で、明日は保護者観覧日です！
+失敗しないで、成功させることが</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/105/#comment">
+									<div id="Information_Normal_Text"><span class="EntryDate">2016/10/23</span><span class="Information_Normal_Text">実四季理桜様 こんにちは。tomds.com管理人のもっさんです。
+クロネコ側のキャラを演じられる</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/105/#comment">
+									<div id="Information_Normal_Text"><span class="EntryDate">2016/10/23</span><span class="Information_Normal_Text">私も11月下旬頃に学芸会でノラネコストーリーやります！クロネコ役で意外と出番多いんですよね（笑）</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/105/#comment">
+									<div id="Information_Normal_Text"><span class="EntryDate">2016/10/02</span><span class="Information_Normal_Text">みゅう 様こんにちは。tomds.com管理人のもっさんです。
+トラリ役をおやりになられるのですね</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/105/#comment">
+									<div id="Information_Normal_Text"><span class="EntryDate">2016/10/02</span><span class="Information_Normal_Text">小学4年生です。
+トラリ役になりました。
+ピアノの伴奏も頑張ろうと思います。</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+							<li>
+								<div id="List_One">
+									<a class="Link_Type_ListBox" href="./e/62/#comment">
+									<div id="Information_Normal_Text"><span class="EntryDate">2015/02/05</span><span class="Information_Normal_Text">いつも検索上位にいる知り合いのあほみたいなサイトの秘密がわかりました。
+外見は普通のページなのです</span></div>
+									</a><!-- [/]Link_Type_ListBox -->
+								</div><!-- [/]List_One -->
+							</li>
+						</ul>
+					</div><!-- [/]Contents_Information_OneBOX -->
+				</div><!-- [/]Contents_Information_One -->
+				
+				
+				
+			</div><!-- [/]Contents_Information -->
+		</div><!-- [/]Area_Information -->
+	</div><!-- [/]BOX_EntryAndInformation -->
+
+
+</div><!-- [/]CBody_BackgroundBox_P01-->
+
+
+<div id="SiteFooter">
+	<div id="CBody_BackgroundBox_P01">
+	</div>
+</div><!-- [/]SiteFooter -->
+
+
+</body>
+
+</html>

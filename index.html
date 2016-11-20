@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>課題2_本文抽出</title>
+    </head>
+    <body>
+        <div id="main">
+            <div class="download">
+                <h2>URL先をinput.htmlとしてダウンロード</h2>
+                <form method="POST" action="download.php">
+                    <input type="text" id="url" name="url" placeholder="URLを入力">
+                    <input type="submit" value="ダウンロード">
+                </form>
+            </div>
+            <div class="upload">
+                <h2>input.htmlから本文を抽出</h2>
+                <form method="POST" action="output.php" enctype="multipart/form-data">
+                    <input type="file" id="input" name="input">
+                    <input type="submit" value="抽出">
+                </form>
+            </div>
+        </div>
+    </body>
+    
+</html>

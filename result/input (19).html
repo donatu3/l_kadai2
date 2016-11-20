@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html
+  lang="ja"
+
+data-admin-domain="//blog.hatena.ne.jp"
+data-author="animatelab"
+data-avail-langs="ja en"
+data-blog="animatelab.hatenablog.com"
+data-blog-host="animatelab.hatenablog.com"
+data-blog-is-public="1"
+data-blog-name="アニメイトラボ開発者ブログ"
+data-blog-uri="http://developer.animatelab.com/"
+data-blogs-uri-base="http://developer.animatelab.com"
+data-brand="hatenablog"
+data-device="pc"
+data-globalheader-color="b"
+data-globalheader-type="pc"
+data-has-touch-view="1"
+data-hide-header="1"
+data-no-suggest-touch-view="1"
+data-page="entry"
+data-plus-available="1"
+data-pro="true"
+data-static-domain="https://cdn.blog.st-hatena.com"
+data-version="3c2fb1fc8f05cfc775bee3f3e570d754"
+
+itemscope
+itemtype="http://schema.org/Article"
+
+
+  data-initial-state="{}"
+
+  >
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    
+    
+    
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7; IE=9; IE=10; IE=11" />
+    <title>インターンで「なんかよく」してきました - アニメイトラボ開発者ブログ</title>
+
+    
+
+    
+      <link rel="canonical" href="http://developer.animatelab.com/entry/2016/09/30/191000"/>
+    
+
+        <link rel="amphtml" href="http://developer.animatelab.com/entry/2016/09/30/191000?amp=1">
+    
+
+<meta itemprop="name" content="インターンで「なんかよく」してきました - アニメイトラボ開発者ブログ"/>
+
+  <meta itemprop="image" content="https://cdn-ak.f.st-hatena.com/images/fotolife/y/yamasy1549/20160930/20160930183035.png"/>
+
+
+    <meta property="og:title" content="インターンで「なんかよく」してきました - アニメイトラボ開発者ブログ"/>
+<meta property="og:type" content="article"/>
+  <meta property="og:url" content="http://developer.animatelab.com/entry/2016/09/30/191000"/>
+
+  <meta property="og:image" content="https://cdn-ak.f.st-hatena.com/images/fotolife/y/yamasy1549/20160930/20160930183035.png"/>
+
+    <meta property="og:description" content="8月半ばからアニメイトラボでエンジニアインターンをしている、やましーです。 今日までの1ヶ月半で、どんなことを考えてやってきたのかを振り返ってみます。 概要をざっくり 「なんかよくしてほしい」 サービスの一つである animateTimes のラジオ配信ページ（スマホ版） をモダンにするお仕事を任されました。 反映されるのはまだちょっと先ですが、こんな感じになります。 （今とあまり見た目が変わっていないのは、今のUIに親しんでいるユーザを置いてきぼりにせず改良を進めるため） アニメイトタイムズのラジオのUI改善 抜本的なリニューアルではない。現在のラジオWebページをベースに、モダンにするチャ…" />
+<meta property="og:site_name" content="アニメイトラボ開発者ブログ"/>
+
+  <meta property="article:published_time" content="1475230200" />
+
+        <meta name="twitter:card"  content="summary_large_image" />
+    <meta name="twitter:image" content="https://cdn-ak.f.st-hatena.com/images/fotolife/y/yamasy1549/20160930/20160930183035.png" />
+  <meta name="twitter:title" content="インターンで「なんかよく」してきました - アニメイトラボ開発者ブログ" />    <meta name="twitter:description" content="8月半ばからアニメイトラボでエンジニアインターンをしている、やましーです。 今日までの1ヶ月半で、どんなことを考えてやってきたのかを振り返ってみます。 概要をざっくり 「なんかよくしてほしい」 サービスの一つである animateTimes のラジオ配信ページ（スマホ版） をモダンにするお仕事を任されました。 反映され…" />  <meta name="twitter:app:name:iphone" content="はてなブログアプリ" />
+  <meta name="twitter:app:id:iphone" content="583299321" />
+  <meta name="twitter:app:url:iphone" content="hatenablog:///open?uri=http%3A%2F%2Fdeveloper.animatelab.com%2Fentry%2F2016%2F09%2F30%2F191000" />
+    
+    <meta name="keywords" content="アニメイト animate アニメイトラボ エンジニア プログラマー engineer programmer">    <meta name="description" content="8月半ばからアニメイトラボでエンジニアインターンをしている、やましーです。 今日までの1ヶ月半で、どんなことを考えてやってきたのかを振り返ってみます。 概要をざっくり 「なんかよくしてほしい」 サービスの一つである animateTimes のラジオ配信ページ（スマホ版） をモダンにするお仕事を任されました。 反映され…" />
+
+    
+<script type="text/javascript">
+// <!--
+
+if (~navigator.userAgent.indexOf('Mac OS X')) {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27ヒラギノ角ゴ Pro W3\x27, \x27Hiragino Kaku Gothic Pro\x27, sans-serif; } </style>');
+} else {
+  document.write('<style type="text/css">html, body { font-family: \x27Helvetica\x27, \x27Arial\x27, \x27メイリオ\x27, \x27Meiryo\x27, \x27MS PGothic\x27, sans-serif; } </style>');
+}
+
+// -->
+</script>
+
+
+
+
+    <link rel="shortcut icon" href="http://cdn.image.st-hatena.com/image/favicon/7c68310223d3d8fd219903262ce47397c379048d/version=1/http%3A%2F%2Fcdn.mogile.archive.st-hatena.com%2Fv1%2Fimage%2Fbash0C7%2F297798812079091881.png">
+<link rel="icon" sizes="192x192" href="http://cdn.image.st-hatena.com/image/square/a4cc38bd601ad2a6564df74d30a5c12e280dc8cf/backend=imagemagick;height=192;version=1;width=192/http%3A%2F%2Fcdn.mogile.archive.st-hatena.com%2Fv1%2Fimage%2Fbash0C7%2F297798812079091881.png">
+
+    
+<link rel="alternate" type="application/atom+xml" title="Atom" href="http://developer.animatelab.com/feed"/>
+<link rel="alternate" type="application/rss+xml" title="RSS2.0" href="http://developer.animatelab.com/rss"/>
+<link rel="alternate" type="application/json+oembed" href="http://hatenablog.com/oembed?url=http%3A%2F%2Fdeveloper.animatelab.com%2Fentry%2F2016%2F09%2F30%2F191000&amp;format=json" title="oEmbed Profile of インターンで「なんかよく」してきました"/>
+<link rel="alternate" type="text/xml+oembed" href="http://hatenablog.com/oembed?url=http%3A%2F%2Fdeveloper.animatelab.com%2Fentry%2F2016%2F09%2F30%2F191000&amp;format=xml" title="oEmbed Profile of インターンで「なんかよく」してきました"/>
+
+      <link rel="author" href="http://www.hatena.ne.jp/yamasy1549/">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.blog.st-hatena.com/css/blog.css?version=3c2fb1fc8f05cfc775bee3f3e570d754"/>
+
+    
+  <link rel="stylesheet" type="text/css" href="//blog.hatena.ne.jp/-/blog_style/8454420450098505224/e554b6307699bb9ff5c458e398022cb9019ed0f5"/>
+
+    <script></script>
+
+    
+<style>
+  div#google_afc_user,
+  div#google_afc_user_container_0,
+  div#google_afc_user_container_1,
+  div#google_afc_user_container_2,
+  div#google_afc_user_container_3,
+  div#google_afc_user_container_4,
+  div#google_afc_user_container_5,
+  div.google_afc_image,
+  div.google_afc_blocklink {
+      display: block !important;
+  }
+</style>
+
+
+    <meta name="author" content="アニメイトラボ開発者">
+
+  </head>
+
+  <body class="page-entry header-image-only enable-top-editarea globalheader-off">
+    <!-- Google Universal Analytics -->
+<script id="google-analytics-script">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29716941-6', 'auto', {'name': 'HatenaBlogTracker', 'sampleRate': 1});
+  ga('HatenaBlogTracker.require', 'displayfeatures');
+  ga('HatenaBlogTracker.send', 'pageview');
+  ga('create', 'UA-29716941-26', 'auto', {'name': 'HatenaBlogSeparatedTracker', 'sampleRate': 10});
+  ga('HatenaBlogSeparatedTracker.require', 'displayfeatures');
+  ga('HatenaBlogSeparatedTracker.send', 'pageview');
+
+    
+      ga('create', 'UA-874393-54', 'auto', {'name': 'HatenaBlogUserTracker'});
+      ga('HatenaBlogUserTracker.require', 'displayfeatures');
+      ga('HatenaBlogUserTracker.send', 'pageview');
+    
+  
+
+  
+  ga('create', 'UA-7855606-1', 'auto', {'name': 'HatenaGlobalTracker', 'sampleRate': 1});
+  ga('HatenaGlobalTracker.require', 'displayfeatures');
+  ga('HatenaGlobalTracker.send', 'pageview');
+</script>
+<!-- End Google Universal Analytics -->
+
+    
+    <div id="header-container">
+     <div id="sp-suggest" style="display: none;"><a id="sp-suggest-link" href="#">スマートフォン用の表示で見る</a></div>
+    </div>
+
+    
+
+<div class="quote-box">
+  <div class="tooltip-quote tooltip-quote-star">
+    <i class="blogicon-star" title="引用スターをつける"></i>
+  </div>
+  <div class="tooltip-quote tooltip-quote-stock">
+    <i class="blogicon-quote" title="引用をストック"></i>
+  </div>
+  <div class="tooltip-quote tooltip-quote-tweet js-tooltip-quote-tweet">
+    <a class="js-tweet-quote" target="_blank" data-track-name="quote-tweet" data-track-once><i class="blogicon-twitter" title="引用してツイートする"></i></a>
+  </div>
+</div>
+
+<div class="message-box" id="quote-star-message-box" style="display: none; position: absolute;">
+  スターをつけました
+</div>
+
+<div class="quote-stock-panel" id="quote-stock-message-box" style="position: absolute; z-index: 3000">
+  <div class="message-box" id="quote-stock-succeeded-message" style="display: none">
+    <p>引用をストックしました</p>
+    <button class="btn btn-primary" id="quote-stock-show-editor-button" data-track-name="curation-quote-edit-button">ストック一覧を見る</button>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="message-box" id="quote-login-required-message" style="display: none">
+    <p>引用するにはまずログインしてください</p>
+    <button class="btn btn-primary" id="quote-login-button">ログイン</button>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="error-box" id="quote-stock-failed-message" style="display: none">
+    <p>引用をストックできませんでした。再度お試しください</p>
+    <button class="btn quote-stock-close-message-button">閉じる</button>
+  </div>
+
+  <div class="error-box" id="unstockable-quote-message-box" style="display: none; position: absolute; z-index: 3000;">
+    <p>限定公開記事のため引用できません。</p>
+  </div>
+</div>
+
+<script type="x-underscore-template" id="js-requote-button-template">
+  <div class="requote-button js-requote-button">
+    <button class="requote-button-btn tipsy-top" title="引用する"><i class="blogicon-quote"></i></button>
+  </div>
+</script>
+
+
+
+    <div id="globalheader-container" style="display: none">
+  <iframe id="globalheader" height="37" frameborder="0" allowTransparency="true"></iframe>
+</div>
+
+
+    
+    <div id="hidden-subscribe-button">
+      <div class="hatena-follow-button-box btn-subscribe js-hatena-follow-button-box"
+  
+  >
+
+  <a href="#" class="hatena-follow-button js-hatena-follow-button">
+    <span class="subscribing">
+      <span class="foreground">読者です</span>
+      <span class="background">読者をやめる</span>
+    </span>
+    <span class="unsubscribing" data-track-name="profile-widget-subscribe-button" data-track-once>
+      <span class="foreground">読者になる</span>
+      <span class="background">読者になる</span>
+    </span>
+  </a>
+  <div class="subscription-count-box js-subscription-count-box">
+    <i></i>
+    <u></u>
+    <span class="subscription-count js-subscription-count">
+    </span>
+  </div>
+</div>
+
+    </div>
+
+    <div id="container">
+      <div id="container-inner">
+        <header id="blog-title" data-brand="hatenablog">
+  <div id="blog-title-inner" style="background-image: url('http://cdn-ak.f.st-hatena.com/images/fotolife/a/animatelab/20150622/20150622132106.png'); background-position: center 0px;">
+    <div id="blog-title-content">
+      <h1 id="title"><a href="http://developer.animatelab.com/">アニメイトラボ開発者ブログ</a></h1>
+      
+        <h2 id="blog-description">株式会社アニメイトラボの開発者ブログです</h2>
+      
+    </div>
+  </div>
+</header>
+
+        
+          <div id="top-editarea">
+            <hr/>
+<div id="blog-title-inner">
+<h1 id="title">アニメイトラボ開発者ブログ</h1>
+<h2 id="blog-description">developer.animatelab.com</h2>
+    
+      
+    
+  </div>
+<hr/>
+          </div>
+        
+        
+        
+
+
+
+<div id="content" class="hfeed"
+  
+  >
+  <div id="content-inner">
+    <div id="wrapper">
+      <div id="main">
+        <div id="main-inner">
+          
+            
+            <!-- google_ad_section_start -->
+            <!-- rakuten_ad_target_begin -->
+            
+              
+                <article class="entry hentry js-entry-article date-first autopagerize_page_element chars-4800 words-200 mode-markdown entry-odd" id="entry-10328749687187111608" data-keyword-campaign="" data-uuid="10328749687187111608">
+  <div class="entry-inner">
+    <header class="entry-header">        <div class="entry-date date first">
+          <a href="http://developer.animatelab.com/entries/2016/09/30" rel="nofollow">
+            <time pubdate datetime="2016-09-30T10:10:00Z" title="2016-09-30T10:10:00Z">
+              <span class="date-year">2016</span><span class="hyphen">-</span><span class="date-month">09</span><span class="hyphen">-</span><span class="date-day">30</span>
+            </time>
+          </a>
+        </div>      <h1 class="entry-title">
+        <a href="http://developer.animatelab.com/entry/2016/09/30/191000" class="entry-title-link bookmark">インターンで「なんかよく」してきました</a>
+      </h1>
+
+      
+      
+      
+
+      
+        
+<div class="social-buttons">
+  
+  
+    <div class="social-button-item">
+      <a href="http://b.hatena.ne.jp/entry/http://developer.animatelab.com/entry/2016/09/30/191000" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="この記事をはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only.gif" alt="この記事をはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+    </div>
+  
+  
+    <div class="social-button-item">
+      <div class="fb-share-button" data-layout="box_count" data-href="http://developer.animatelab.com/entry/2016/09/30/191000"></div>
+    </div>
+  
+  
+    <div class="social-button-item">
+      <a href="https://twitter.com/search?q=http%3A%2F%2Fdeveloper.animatelab.com%2Fentry%2F2016%2F09%2F30%2F191000" class="social-button-twitter-balloon" target="_blank">
+        <span class="social-button-twitter-balloon-list">list</span>
+        <i class="social-button-twitter-balloon-arrow-border"></i>
+        <u class="social-button-twitter-balloon-arrow"></u>
+      </a>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://developer.animatelab.com/entry/2016/09/30/191000" data-count="vertical" data-text="インターンで「なんかよく」してきました - アニメイトラボ開発者ブログ" data-lang="ja">Tweet</a>
+    </div>
+  
+  
+  
+  
+    <span>
+      <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
+      <script type="text/javascript">
+      new media_line_me.LineButton({"pc":false,"lang":"ja","type":"e"});
+      </script>
+    </span>
+  
+  
+</div>
+
+      
+    </header>
+        
+    <div class="entry-content">
+
+      
+        <p>8月半ばから<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%CB%A5%E1%A5%A4%A5%C8">アニメイト</a>ラボでエンジニア<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%F3%A5%BF%A1%BC%A5%F3">インターン</a>をしている、<a href="https://twitter.com/yamasy1549">やましー</a>です。</p>
+
+<p>今日までの1ヶ月半で、どんなことを考えてやってきたのかを振り返ってみます。</p>
+
+<h1>概要をざっくり</h1>
+
+<h2>「なんかよくしてほしい」</h2>
+
+<p>サービスの一つである <a href="//sp.animatetimes.com/radio">animateTimes のラジオ配信ページ（スマホ版）</a> をモ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C0%A5%F3">ダン</a>にするお仕事を任されました。</p>
+
+<p>反映されるのはまだちょっと先ですが、こんな感じになります。</p>
+
+<p>（今とあまり見た目が変わっていないのは、今のUIに親しんでいるユーザを置いてきぼりにせず改良を進めるため）</p>
+
+<p><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/y/yamasy1549/20160930/20160930183035.png" alt="f:id:yamasy1549:20160930183035p:plain" title="f:id:yamasy1549:20160930183035p:plain" class="hatena-fotolife" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/y/yamasy1549/20160930/20160930183642.gif" alt="f:id:yamasy1549:20160930183642g:plain" title="f:id:yamasy1549:20160930183642g:plain" class="hatena-fotolife" itemprop="image"></span></p>
+
+<blockquote><p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%CB%A5%E1%A5%A4%A5%C8">アニメイト</a>タイムズのラジオのUI改善</p>
+
+<p>抜本的なリニューアルではない。現在のラジオWebページをベースに、モ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C0%A5%F3">ダン</a>にするチャレンジ。
+最大で、デザイン、UI、スタイル、フロントエンドAP、バックエンドAPまで担う。データベースは変更なしとする。</p>
+
+<p>-- 社内<a class="keyword" href="http://d.hatena.ne.jp/keyword/esa">esa</a>より</p></blockquote>
+
+<h3>主な使ったもの</h3>
+
+<p><strong>「最近流行りのモ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C0%A5%F3">ダン</a>な構成だからアピールして欲しい」と言われたので書いておきます！</strong></p>
+
+<table>
+<thead>
+<tr>
+<th> 使ったもの </th>
+<th> 選定理由 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> <a class="keyword" href="http://d.hatena.ne.jp/keyword/Rails">Rails</a> (5.0.0.1) </td>
+<td> やましーが比較的慣れてるから </td>
+</tr>
+<tr>
+<td> browserify-<a class="keyword" href="http://d.hatena.ne.jp/keyword/rails">rails</a> </td>
+<td> sprocketsとの共存 </td>
+</tr>
+<tr>
+<td> npm </td>
+<td> JSのライブラリ管理 </td>
+</tr>
+<tr>
+<td> babel </td>
+<td> ES6で書きたい </td>
+</tr>
+<tr>
+<td> React (15.3.1) </td>
+<td> ※後述 </td>
+</tr>
+<tr>
+<td> React Router (2.8.1) </td>
+<td> SPAを見据えて / <a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C7%A5%D5%A5%A1%A5%AF%A5%C8">デファクト</a>っぽい </td>
+</tr>
+<tr>
+<td> KSS </td>
+<td> スタイルガイドジェネレーター / 色々ある中で一番使われていそうだった </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>特にReactは</p>
+
+<ul>
+<li>SPAを見据えて</li>
+<li>脱・<a class="keyword" href="http://d.hatena.ne.jp/keyword/jQuery">jQuery</a>
+
+<ul>
+<li>ちょっとモ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C0%A5%F3">ダン</a>なことやろうとすると、<a class="keyword" href="http://d.hatena.ne.jp/keyword/jQuery">jQuery</a>ではついていけなくなりつつある</li>
+</ul>
+</li>
+<li>そこそこの規模（ページ数）で、Componentベースで組んでいくと便利そう</li>
+<li>1ヶ月半という期間的にも、そもそもViewをいじるので精一杯かなと思った</li>
+<li><strong>「「迷ったらReact」」</strong></li>
+</ul>
+
+
+<p>という理由で使ってみました。Reactを触るのはこれが始めてです。</p>
+
+<h2>なんかよくする</h2>
+
+<p>なんかよくすることが出来るなら、今なんかよくないところがあるはずです。</p>
+
+<p>ここで大切なのは「誰にとっての」なんかよくないところを見つければいいのか？です。</p>
+
+<p>それは「エンジニア、ユーザー」といったロールの区切りよりもっと細かい枠、例えばユーザーの中でも「初見さん、常連さん」、さらには</p>
+
+<ul>
+<li>ユーザー
+
+<ul>
+<li>初見
+
+<ul>
+<li>好きな声優さんがラジオをやっているか知りたい人</li>
+<li>好きなアニメに関するラジオがないか知りたい人</li>
+<li>PICK UP コーナーに載っているラジオをなんとなく聴いてみた人</li>
+<li>…</li>
+</ul>
+</li>
+<li>常連
+
+<ul>
+<li>毎週○曜日の特定のラジオを聴きたい人</li>
+<li>自分の趣味に合うラジオが他にないか知りたい人</li>
+<li>…</li>
+</ul>
+</li>
+<li>（共通）
+
+<ul>
+<li>なんとなくふらふら〜っとラジオをウィンドーショッピングしたい人</li>
+<li>…</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+<p>などかなぁと思っています。</p>
+
+<p>各パターンから「〜をなんかよくしたい（e.g. ラジオが全画面で再生されて、聴いている間画面操作ができないのをなんかよくしたい）」項目を抜き出し、大まかにまとめます。本当はユーザーテスト/インタビューなどしたかったのですが、継続してやらないと意味がなさそうで、<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%F3%A5%BF%A1%BC%A5%F3">インターン</a>中にやるには時間が足りませんでした。</p>
+
+<h2>なんかよくした</h2>
+
+<p>この1ヶ月半でなんかよくしたこと一覧です。</p>
+
+<ul>
+<li>ラジオを聞いている時は何もできない
+
+<ul>
+<li>画面下部固定コントローラでもラジオの操作ができるようにして、記事を読みながらラジオを聞けるようになった（<a class="keyword" href="http://d.hatena.ne.jp/keyword/Android">Android</a>）</li>
+</ul>
+</li>
+<li>ごちゃごちゃしてどこ見ればいいかわかんない
+
+<ul>
+<li>コンテンツの並べ方を見直した</li>
+<li>ラジオ再生パーツをファーストビューに持ってきた</li>
+<li>ボタンに統一感をもたせた</li>
+</ul>
+</li>
+<li>表示時間が遅い・広告が読み込まれて誤タップしてイライラ
+
+<ul>
+<li>広告の量や配置を見直してもらった</li>
+</ul>
+</li>
+<li>長年保守され続けたコード
+
+<ul>
+<li><a class="keyword" href="http://d.hatena.ne.jp/keyword/PHP">PHP</a>から <a class="keyword" href="http://d.hatena.ne.jp/keyword/Rails">Rails</a> / React に書き換えた</li>
+</ul>
+</li>
+</ul>
+
+
+<h3>やったこと</h3>
+
+<p>洗い出した「なんかよくない」をひとつひとつ改善していくことにしました。</p>
+
+<p>やったことは</p>
+
+<ul>
+<li>画面案を作る
+
+<ul>
+<li>一度画面の要素を分解して（Atomic Design でいうMoleculesレベル）、再構成してみる</li>
+<li><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%E9%A5%EC">イラレ</a>でぽちぽち<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%E2%A5%C3%A5%AF%A5%A2%A5%C3%A5%D7">モックアップ</a>をつくる</li>
+<li>意見を聞いてだいたいの方向が固まったら、ざっくり動くプロトタイプを作る
+
+<ul>
+<li>gulpやjadeを使った。軽く何か書きたいなーってときに便利</li>
+</ul>
+</li>
+<li>プロトタイプを見せて完成イメージを共有</li>
+</ul>
+</li>
+<li>コードを書いていく
+
+<ul>
+<li>どんな設計にしようと思ってるか、など <a href="https://esa.io/">esa</a> にまとめながらやる</li>
+<li>適宜レビューをもらう</li>
+</ul>
+</li>
+</ul>
+
+
+<p>です。</p>
+
+<h3>画面案（一部）</h3>
+
+<p><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/y/yamasy1549/20160930/20160930183303.png" alt="f:id:yamasy1549:20160930183303p:plain" title="f:id:yamasy1549:20160930183303p:plain" class="hatena-fotolife" itemprop="image"></span>
+<span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/y/yamasy1549/20160930/20160930183325.png" alt="f:id:yamasy1549:20160930183325p:plain" title="f:id:yamasy1549:20160930183325p:plain" class="hatena-fotolife" itemprop="image"></span></p>
+
+<h1>考えたこと</h1>
+
+<h2>フロントのスタイルガイド</h2>
+
+<p>コーディング規約とかじゃない方です。</p>
+
+<p>今後他のコンテンツ（ニュース配信など）でもUIに関するコードを使いまわせるように、見本帳となるようなフロントのスタイルガイドを作りました。プロトタイプの段階から簡単なスタイルガイドを用意していたので、いざ腰を入れて実装していくときもUIに関してはそれをチラ見しながらサクサク進め、機能本体やデータの流れに集中することができて良かったです。</p>
+
+<h2>ユーザーになりきるのが難しい</h2>
+
+<p>作っているうちに「この機能/情報ってほんまに必要なん？」と思うことがちょこちょこあって、やっぱりユーザーインタビューしたい、ユーザーテストしたいなぁという気持ちになりました。短期間で「なんかよくする」のつらいところだと思います。</p>
+
+<h2>「なんかよく」ありたい</h2>
+
+<p>ユーザーにとっての「なんかよく」を実現するには、まず開発側の地ならしというかモ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C0%A5%F3">ダン</a>な環境構築というか、そういうのが必要だと思いました。今回は改修（ユーザーから見たアプリケーションの改修）と地ならし（開発者から見たアプリケーションの改修/モ<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%C0%A5%F3">ダン</a>化）の両方を実質一気にしていたのでちょっときつかったです。</p>
+
+<h1><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%F3%A5%BF%A1%BC%A5%F3">インターン</a>を終えて</h1>
+
+<p>私は一応エンジニアのところに入って<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%F3%A5%BF%A1%BC%A5%F3">インターン</a>をしていたのですが、デザイナーっぽいことなどもやらせてもらったので、複数の目線でサービスを見ることができました。どうしたらなんかよくなるか考えるところからはじめて、デザインを考えコードを書きイメージを形にしていくのは本当に楽しかったです。</p>
+
+<p>以前こんな記事を書いたことがあって、そこでも言っているのですが</p>
+
+<blockquote><p>デザイナーさんもエンジニアさんも結局思ってることは同じで、良いものを作りたいはずです。ただ、良いものを作るための道のり・表現が違うだけだと思います。</p>
+
+<p>もちろんデザイン・エンジニアリングに特化したひとがいれば今までどおり作業をすすめることはできます。でももし「中間」のひとがいれば、デザイナーさんとエンジニアさんどちらの気持ちもわかるひとがいれば、その翻訳・橋渡しができ、もやっとした気持ちも少し減るのではないでしょうか。</p>
+
+<p>-- <a href="http://yamasy1549.hateblo.jp/entry/2016/03/15/001504">FRONTEND CONFERENCE 2016 で基調講演をしました #frontkansai</a></p></blockquote>
+
+<p>デザインとエンジニアリングの両方を一人でやってしまうという、ある意味理想の究極系を実現させてくれた<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%CB%A5%E1%A5%A4%A5%C8">アニメイト</a>ラボに感謝です。</p>
+
+<p>他にも<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%F3%A5%BF%A1%BC%A5%F3">インターン</a>用のプログラムじゃなくて実際の業務にガチコミットさせてもらったり、Reactなんて触ったこともなかったのに選定は全部おまかせしてくれたり、エンジニア見習いとして嬉しいことがたくさんでした。</p>
+
+<p>あとは改修したラジオ機能が修正を経て世の中に出ていくのを見守るだけです。</p>
+
+<h1>メンター陣からのメッセージ</h1>
+
+<blockquote><p>せっかくの就業体験の機会なので、実はあえて難しい前提条件を設定しました。ところがそのハードルを飛び越えて、素晴らしいプロダクトになり瞠目しています。
+これからも色々な技術を身につけて、新しいものを生み出す活動をしてくれたらうれしいなと思います。</p>
+
+<p>この先どんな勉強をするか、仕事をするかは色々迷ってるかと思いますが、何をやっても将来の糧になります。やって損なものはありません。今回同様、貪欲に古いものを知り、新しいものを取り入れ、突き進んでいってください！</p></blockquote>
+
+<hr />
+
+<blockquote><p>最終発表会のときに「ドキュメントがない」って言ってましたが、私が入社したとき（1年前）も同じ感想でしたし、今もそこまで整備されているとは言い難い状況です。</p>
+
+<p>そんな中、表向きのWebサイトと<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%BD%A1%BC%A5%B9%A5%B3%A1%BC%A5%C9">ソースコード</a>・データベース構造だけしか渡してないのに、ここまで動くものを作って、かつドキュメントも十分に残してくれたのはいちエンジニアとして本当にすごいと思います。一覧画面が間に合わなかった〜とか歯がゆいところはあるかもしれませんが、あの1画面が動いただけでも十分にすごいです。</p>
+
+<p>今回1人での開発になりがちでしたが、次回があればもっとチーム開発っぽいことしたいね！と思ってます。是非また遊びにきてください！</p></blockquote>
+
+<hr />
+
+<blockquote><p>1ヶ月半の<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A4%A5%F3%A5%BF%A1%BC%A5%F3%A5%B7%A5%C3%A5%D7">インターンシップ</a>お疲れ様でした。
+資料や発表を拝見しましたが、短い期間で良くできているなと感銘を受けました。
+特に持っている知識や技術を使って、新しい事に積極的に挑戦するというスタイルに関しては既におっさんに膝まで浸かっている自分としては見習うべき点だと痛感致しました。
+残してもらったソースとか見て、自分の勉強に活かしたいと思います。</p>
+
+<p>これからも大変なことや苦労することもあるかもしれませんが、草葉の陰から応援しております。
+お疲れ様でした。</p></blockquote>
+
+<hr />
+
+<blockquote><p>私は前職ではユーザーとエンジニアの間に立つ「中間」の仕事をしていました。結構、社会に出ると頭固くて、自分の立場以外の意見を理解できない人って多くて苦労しました。なのでいろんな立場で物事を考えられるってすごい大事なことだと思います。しかもデザイン、エンジニアリングの両方ともセンスがあるので、これからどんどんいい物を作って行ってください！</p></blockquote>
+
+<hr />
+
+<blockquote><p>人生の貴重な貴重な1ヶ月半という時間を<a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%CB%A5%E1%A5%A4%A5%C8">アニメイト</a>ラボのために費やしてくれてありがとうございました。</p>
+
+<p>ITの領域は日進月歩の世界。<a class="keyword" href="http://d.hatena.ne.jp/keyword/iPhone">iPhone</a>が発売したのは2007年6月29日、それから10年にも満たない間に、世界を変革するほどの進化がありました。</p>
+
+<p>つまり、10年後は全く違う。先も見えない。そんな可能性が十二分にある世界。ですが、今の積み重ねでしか未来はない。今をガンバってこそ、将来の自分が素敵になっていると思います。</p>
+
+<p>若いうちからたくさんの経験を積むということはとても大事。これからも技術、デザイン、コミュニケーションを学びながら、最高の人生を歩んでください。また、東京に来るときは遊びにきてね。</p></blockquote>
+
+<hr />
+
+<blockquote><p>1か月半ほど、お疲れ様でした！</p>
+
+<p><a class="keyword" href="http://d.hatena.ne.jp/keyword/%A5%A2%A5%CB%A5%E1%A5%A4%A5%C8">アニメイト</a>タイムズのコードは正直読んでて色々わからんかったり辛い部分があったと思いますがここまで動くものを作れるのは素晴らしいと思いました。</p>
+
+<p>振り返りでも言っていた通り特に「スピード感」が魅力的だなーと思っていたので見習いたいと思います。一方で「自分で考えこみすぎてしまう」「集中しすぎてしまう」などで最初はなかなか周りに話を聞きにいけない様子もありましたが、後半になるにつれてどんどん色々なことを聞いたり追いかけしてたりで社会人スキルの成長が目覚ましいなーと思っておりました。</p>
+
+<p>今後も頑張ってください！</p></blockquote>
+
+      
+    </div>
+    <footer class="entry-footer">
+      <p class="entry-footer-section">
+        <span class="author vcard"><span class="fn" data-load-nickname="1" data-user-name="yamasy1549">yamasy1549</span></span>
+        <span class="entry-footer-time"><a href="http://developer.animatelab.com/entry/2016/09/30/191000"><time data-relative datetime="2016-09-30T10:10:00Z" title="2016-09-30T10:10:00Z" pubdate class="updated">2016-09-30 19:10</time></a></span>
+      </p>
+
+      
+        <div class="hatena-star-container">
+        </div>
+        <div class="hatena-star-metadata" style="display: none">
+          <a class="hatena-star-permalink" href="http://developer.animatelab.com/entry/2016/09/30/191000">インターンで「なんかよく」してきました</a>
+        </div>
+      
+
+      
+<div class="social-buttons">
+  
+  
+    <div class="social-button-item">
+      <a href="http://b.hatena.ne.jp/entry/http://developer.animatelab.com/entry/2016/09/30/191000" class="hatena-bookmark-button" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="この記事をはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only.gif" alt="この記事をはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
+    </div>
+  
+  
+    <div class="social-button-item">
+      <div class="fb-share-button" data-layout="box_count" data-href="http://developer.animatelab.com/entry/2016/09/30/191000"></div>
+    </div>
+  
+  
+    <div class="social-button-item">
+      <a href="https://twitter.com/search?q=http%3A%2F%2Fdeveloper.animatelab.com%2Fentry%2F2016%2F09%2F30%2F191000" class="social-button-twitter-balloon" target="_blank">
+        <span class="social-button-twitter-balloon-list">list</span>
+        <i class="social-button-twitter-balloon-arrow-border"></i>
+        <u class="social-button-twitter-balloon-arrow"></u>
+      </a>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://developer.animatelab.com/entry/2016/09/30/191000" data-count="vertical" data-text="インターンで「なんかよく」してきました - アニメイトラボ開発者ブログ" data-lang="ja">Tweet</a>
+    </div>
+  
+  
+  
+  
+    <span>
+      <script type="text/javascript" src="//media.line.me/js/line-button.js?v=20140411" ></script>
+      <script type="text/javascript">
+      new media_line_me.LineButton({"pc":false,"lang":"ja","type":"e"});
+      </script>
+    </span>
+  
+  
+</div>
+
+
+      
+
+      <div class="customized-footer">
+
+        
+
+          
+
+          
+
+
+          
+        
+      </div>
+
+      <div class="comment-box">
+        
+        <ul class="comment">
+          <li class="read-more-comments" style="display: none;"><a>もっと読む (0)</a></li>
+        </ul>
+        
+          <a class="leave-comment-title">コメントを書く</a>
+        
+      </div>
+      <!-- enjapan ad -->
+      
+    </footer>
+  </div>
+</article>
+
+                
+
+                
+                  
+                  
+                  <div class="permalink pager">
+                    
+                    
+                      
+                      <span class="pager-next">
+                        <a href="http://developer.animatelab.com/entry/2016/09/16/090000" rel="next">
+                          なぜキャンペーンページを公開するのか？
+                          <span class="pager-arrow"> »</span>
+                        </a>
+                      </span>
+                    
+                  </div>
+                
+
+              
+            
+            <!-- rakuten_ad_target_end -->
+            <!-- google_ad_section_end -->
+
+            
+          
+        </div>
+      </div>
+
+      
+      <aside id="box1">
+        <div id="box1-inner">
+        </div>
+      </aside>
+
+    </div><!-- #wrapper -->
+
+    
+<aside id="box2">
+  
+  <div id="box2-inner">
+    
+      
+
+<div class="hatena-module hatena-module-profile">
+  <div class="hatena-module-title">
+    アニメイトラボについて
+  </div>
+  <div class="hatena-module-body">
+    
+
+    
+
+    
+
+    
+    <div class="profile-description">
+      <p>インターネット技術を通じてアニメ業界のインフラをより強化していきます</p><br />
+<p>この事業領域で、自分たちの事業を自分たちで考え作り上げる技術職仲間を募集しています。<br />
+下記サイトからご連絡ください。<br />
+<a href="https://recruit.animatelab.com/">https://recruit.animatelab.com/</a></p>
+
+    </div>
+    
+
+    
+      <div class="hatena-follow-button-box btn-subscribe js-hatena-follow-button-box"
+  
+  >
+
+  <a href="#" class="hatena-follow-button js-hatena-follow-button">
+    <span class="subscribing">
+      <span class="foreground">読者です</span>
+      <span class="background">読者をやめる</span>
+    </span>
+    <span class="unsubscribing" data-track-name="profile-widget-subscribe-button" data-track-once>
+      <span class="foreground">読者になる</span>
+      <span class="background">読者になる</span>
+    </span>
+  </a>
+  <div class="subscription-count-box js-subscription-count-box">
+    <i></i>
+    <u></u>
+    <span class="subscription-count js-subscription-count">
+    </span>
+  </div>
+</div>
+
+    
+
+    
+
+    
+  </div>
+</div>
+
+      
+      
+    
+      <div class="hatena-module hatena-module-links">
+  <div class="hatena-module-title">
+    リンク
+  </div>
+  <div class="hatena-module-body">
+    <ul class="hatena-urllist">
+      
+        <li>
+          <a href="https://recruit.animatelab.com/">アニメイトラボ 採用サイト</a>
+        </li>
+      
+        <li>
+          <a href="http://www.animatelab.com">コーポレートサイト</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+      
+      
+    
+      <div class="hatena-module hatena-module-search-box">
+  <div class="hatena-module-title">
+    検索
+  </div>
+  <div class="hatena-module-body">
+    <form class="search-form" role="search" action="http://developer.animatelab.com/search" method="get">
+      <input type="text" name="q" class="search-module-input" value="" placeholder="ブログ内検索" required>
+      <input type="submit" value="検索" class="search-module-button" />
+    </form>
+  </div>
+</div>
+
+      
+      
+    
+      <div class="hatena-module hatena-module-recent-entries ">
+  <div class="hatena-module-title">
+    <a href="http://developer.animatelab.com/archive">
+      最新記事
+    </a>
+  </div>
+  <div class="hatena-module-body">
+    <ul class="recent-entries hatena-urllist ">
+  
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://developer.animatelab.com/entry/2016/09/30/191000" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">インターンで「なんかよく」してきました        </a>
+        
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://developer.animatelab.com/entry/2016/09/16/090000" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">なぜキャンペーンページを公開するのか？        </a>
+        
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://developer.animatelab.com/entry/2016/09/14/083000" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">BOTソンを開催して感じた収益化の難しさと社内活用のポイント        </a>
+        
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://developer.animatelab.com/entry/2016/09/01/093000" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">アニメイトラボ流エンジニア日報と、個人的に始めてみたプライベート日報        </a>
+        
+        
+
+              </div>
+    </li>
+  
+    
+    <li class="urllist-item recent-entries-item">
+      <div class="urllist-item-inner recent-entries-item-inner">
+        
+        
+        <a href="http://developer.animatelab.com/entry/2016/08/05/180000" class="urllist-title-link recent-entries-title-link          urllist-title recent-entries-title        ">Android で一部の文字列をリンク化した TextView を生成するクラスを実装してみました #Kotlin         </a>
+        
+        
+
+              </div>
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+      
+      
+    
+      
+
+<div class="hatena-module hatena-module-archive" data-archive-type="default" data-archive-url="http://developer.animatelab.com/archive">
+  <div class="hatena-module-title">
+    <a href="http://developer.animatelab.com/archive">月別アーカイブ</a>
+  </div>
+  <div class="hatena-module-body">
+  </div>
+</div>
+
+      
+      
+    
+    
+  </div>
+</aside>
+
+
+  </div>
+</div>
+
+
+
+
+        
+        
+        
+      </div>
+    </div>
+
+    
+
+    
+
+    
+  <script src="https://s.hatena.ne.jp/js/HatenaStar.js"></script>
+
+
+    
+  <script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+
+<script src="https://apis.google.com/js/platform.js" async defer>
+  { lang: 'ja', "parsetags": "explicit" }
+</script>
+<script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+
+
+
+  <script type="text/javascript" src="https://cdn.blog.st-hatena.com/js/external/react-with-addons.min.js?version=0.14.7"></script>
+  <script type="text/javascript" src="https://cdn.blog.st-hatena.com/js/external/react-dom.min.js?version=0.14.7"></script>
+
+
+<script type="text/javascript" src="https://cdn.blog.st-hatena.com/js/external/jquery.min.js?version=1.12.3"></script>
+<script type="text/javascript" src="//cdn7.www.st-hatena.com/js/jquery/jquery-ui.1.10.0.custom.min.js"></script>
+<script type="text/javascript" src="https://cdn.blog.st-hatena.com/js/external/jquery.flot.js?version=0.8.3"></script>
+<script type="text/javascript" src="https://cdn.blog.st-hatena.com/js/external/jquery.flot.time.js?version=0.8.3"></script>
+
+
+
+
+<script id="hatenablog-js" data-env="production"
+  type="text/javascript" src="https://cdn.blog.st-hatena.com/js/hatenablog.js?version=3c2fb1fc8f05cfc775bee3f3e570d754" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.blog.st-hatena.com/js/texts-ja.js?version=3c2fb1fc8f05cfc775bee3f3e570d754"></script>
+
+
+  <script type="text/javascript">Hatena.Diary.GlobalHeader.init()</script>
+
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
+
+
+    
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=719729204785177&version=v2.7";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+    
+       
+
+  <script id="hatena-counter-script" type="text/javascript"><!--
+      hatena_counter_name = "animatelab";
+      hatena_counter_id = "101";
+      hatena_counter_ref = document.referrer+"";
+      hatena_counter_screen = screen.width + "x" + screen.height+","+screen.colorDepth;
+  //--></script>
+  <script type="text/javascript" src="http://counter.hatena.ne.jp/js/counter.js"></script>
+  <noscript><img src="http://counter.hatena.ne.jp/animatelab/101" border="0" alt="counter"></noscript>
+
+
+    
+
+  </body>
+</html>
+
